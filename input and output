@@ -49,6 +49,7 @@ Sample Input:
 A
 Sample Output:
 65
+
 #include"iostream"
 using namespace std;
 int main(){
@@ -56,3 +57,66 @@ int main(){
     cin>>a;
     cout<< int(a);
 }
+
+6]Write a program to get a number(ASCII) as input and print its equivalent character.
+You can display a character if you know ASCII code of that character.
+Sample Input:
+103
+Sample Output:
+g
+
+#include"iostream"
+using namespace std;
+int main(){
+    int a;
+    cin>>a;
+    cout<<static_cast<char>(a);
+}
+
+7]Write a program to get a float value from the user and display it.
+Sample Input:
+23.115
+Sample Output:
+23.115000
+
+#include"iostream"
+#include"iomanip"
+using namespace std;
+int main(){
+    float a;
+    cin>>a;
+    cout<<fixed<<setprecision(6)<<a;
+    return 0;
+}
+
+
+8]Write a program to get a float value from the user and display it in the below-mentioned format
+INPUT & OUTPUT FORMAT: 
+Input consists of one float value. 
+Output consists of one integer, its highest round off value and its lowest round off value.
+Sample Input:
+23.115
+Sample Output:
+23.115000
+23.115
+23.11
+23.1
+
+#include"iostream"
+#include"iomanip"
+using namespace std;
+int main()
+{
+    float a;
+    cin>>a;
+    cout<<fixed<<setprecision(6)<<a;
+    cout<<"\n";
+    cout<<fixed<<setprecision(3)<<a;
+    cout<<"\n";
+    cout<<fixed<<setprecision(2)<<a;
+    cout<<"\n";
+    cout<<fixed<<setprecision(1)<<a;
+    return 0;
+}
+
+9]
